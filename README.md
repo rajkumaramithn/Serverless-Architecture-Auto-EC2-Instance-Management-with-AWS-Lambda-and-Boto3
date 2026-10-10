@@ -18,9 +18,8 @@ This automation helps reduce unnecessary compute usage and demonstrates the prac
 - Create an **AWS** Lambda function using Python and Boto3.
 - Configure **IAM** permissions for **EC2** instance management.
 - Test the function using a manual Lambda invocation.
-- Verify execution results using CloudWatch logs.
-- Document the implementation and testing process.
-
+- Verify execution results by checking the instance states.
+  
 ## 3. Technologies Used
 
 | Technology | Purpose |
@@ -30,7 +29,6 @@ This automation helps reduce unnecessary compute usage and demonstrates the prac
 | Python | Programming language |
 | Boto3 | AWS SDK for Python |
 | AWS IAM | Access control and permissions |
-| Amazon CloudWatch | Execution logs and troubleshooting |
 | GitHub | Source code management and documentation |
 
 ## 4. Project Architecture
@@ -50,7 +48,7 @@ This automation helps reduce unnecessary compute usage and demonstrates the prac
 
 ****EC2** instances**
 
-![**EC2** instances](screenshots/01-ec2-instances.png)
+![**EC2** instances](Screenshots/GAOSA_1.png)
 
 **Auto-Stop tag**
 
@@ -92,8 +90,6 @@ The function uses **EC2** tag filters to identify matching instances and checks 
 
 The complete implementation is available in [`lambda_function.py`](lambda_function.py).
 
-![Lambda source code](screenshots/06-lambda-code.png)
-
 ## 8. Testing Procedure
 
 ## Ensure the `Auto-Stop` instance is running.
@@ -109,15 +105,10 @@ Record the actual results obtained during execution.
 | Stop tagged instance | Instance becomes stopped | Update after testing |
 | Start tagged instance | Instance becomes running | Update after testing |
 | Lambda invocation | Successful execution | Update after testing |
-| CloudWatch logging | Action messages are recorded | Update after testing |
 
 ### Lambda Invocation
 
 ![Lambda test result](screenshots/07-lambda-test-success.png)
-
-### CloudWatch Logs
-
-![CloudWatch execution logs](screenshots/08-cloudwatch-logs.png)
 
 ### Final EC2 Instance States
 
@@ -129,31 +120,13 @@ Record the actual results obtained during execution.
 - Creating Lambda functions using Python.
 - Using Boto3 to interact with **AWS** services.
 - Configuring **IAM** roles and permissions.
-- Testing cloud automation and reviewing execution logs.
 - Maintaining project documentation using GitHub.
 
-## 11. Security and Cost Considerations
-
-- Use least-privilege **IAM** policies.
-- Avoid committing credentials, access keys, or sensitive account information.
-- Confirm the **AWS** Region and tag values before invoking the function.
-- The function can affect every matching instance in its Region.
-- Stopped **EC2** instances may still incur **EBS** storage and other associated charges.
-- Delete unneeded test resources after completing the assignment.
-
-## 12. Limitations and Future Improvements
-
-- Add EventBridge scheduling to automate execution at specified times.
-- Add notifications for failed operations.
-- Improve error handling and reporting.
-- Restrict management to instances with an additional environment or ownership tag.
-- Add automated tests using mocked **AWS** **API** responses.
-
-## 13. Conclusion
+## 11. Conclusion
 
 This project demonstrates tag-based **EC2** instance management using **AWS** Lambda and Boto3. It automates starting and stopping instances based on their tags, records execution details in CloudWatch, and verifies the resulting instance states.
 
-## 14. References
+## 12. References
 
 - [**AWS** Lambda Documentation](https://docs.aws.amazon.com/lambda/)
 - [Boto3 Documentation](https://docs.aws.amazon.com/boto3/)
