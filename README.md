@@ -72,6 +72,22 @@ This automation helps reduce unnecessary compute usage and demonstrates the prac
 
 ![**EC2** instances](Screenshots/GAOSA_12.png)
 
+
+## 6. IAM Configuration
+
+An **IAM** role named `Lambda-**EC2**-Instance-Management-Role` is assigned to the Lambda function.
+
+The custom **IAM** policy grants these permissions:
+
+- `ec2:DescribeInstances`
+- `ec2:StopInstances`
+- `ec2:StartInstances`
+
+These permissions allow the function to identify instances and request the required state changes.
+
+**Note: Create a Custom IAM Policy to follow the Industry Best Practices**
+Follow the Screenshots below.
+
 **IAM Policy & Role Setup**
 
 ![IAM Policy & Role Setup](Screenshots/GAOSA_13.png)
@@ -88,26 +104,6 @@ This automation helps reduce unnecessary compute usage and demonstrates the prac
 
 ![IAM Policy & Role Setup](Screenshots/GAOSA_19.png)
 
-![IAM Policy & Role Setup](Screenshots/GAOSA_20.png)
-
-
-**Auto-Start tag**
-
-![Auto-Start tag](screenshots/03-auto-start-tag.png)
-
-## 6. IAM Configuration
-
-An **IAM** role named `Lambda-**EC2**-Instance-Management-Role` is assigned to the Lambda function.
-
-The custom **IAM** policy grants these permissions:
-
-- `ec2:DescribeInstances`
-- `ec2:StopInstances`
-- `ec2:StartInstances`
-
-These permissions allow the function to identify instances and request the required state changes.
-
-![**IAM** role configuration](screenshots/04-iam-role.png)
 
 ## 7. Lambda Function Configuration
 
@@ -121,7 +117,11 @@ These permissions allow the function to identify instances and request the requi
 
 The function uses **EC2** tag filters to identify matching instances and checks their current states before requesting changes.
 
-![Lambda function overview](screenshots/05-lambda-overview.png)
+![Lambda function overview](Screenshots/GAOSA_20.png)
+
+![Lambda function overview](Screenshots/GAOSA_21.png)
+
+![Lambda function overview](Screenshots/GAOSA_22.png)
 
 ### Source Code
 
@@ -145,11 +145,13 @@ Record the actual results obtained during execution.
 
 ### Lambda Invocation
 
-![Lambda test result](screenshots/07-lambda-test-success.png)
+![Lambda test result](Screenshots/GAOSA_24.png)
+
+![Lambda test result](Screenshots/GAOSA_25.png)
 
 ### Final EC2 Instance States
 
-![Final **EC2** instance states](screenshots/09-final-instance-states.png)
+![Final **EC2** instance states](Screenshots/GAOSA_27.png)
 
 ## 10. Key Learnings
 
