@@ -72,9 +72,24 @@ This automation helps reduce unnecessary compute usage and demonstrates the prac
 
 ![**EC2** instances](Screenshots/GAOSA_12.png)
 
-**Auto-Stop tag**
+**IAM Policy & Role Setup**
 
-![Auto-Stop tag](screenshots/02-auto-stop-tag.png)
+![IAM Policy & Role Setup](Screenshots/GAOSA_13.png)
+
+![IAM Policy & Role Setup](Screenshots/GAOSA_14.png)
+
+![IAM Policy & Role Setup](Screenshots/GAOSA_15.png)
+
+![IAM Policy & Role Setup](Screenshots/GAOSA_16.png)
+
+![IAM Policy & Role Setup](Screenshots/GAOSA_17.png)
+
+![IAM Policy & Role Setup](Screenshots/GAOSA_18.png)
+
+![IAM Policy & Role Setup](Screenshots/GAOSA_19.png)
+
+![IAM Policy & Role Setup](Screenshots/GAOSA_20.png)
+
 
 **Auto-Start tag**
 
