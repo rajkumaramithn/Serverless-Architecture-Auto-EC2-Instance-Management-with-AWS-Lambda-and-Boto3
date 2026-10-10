@@ -46,9 +46,31 @@ This automation helps reduce unnecessary compute usage and demonstrates the prac
 
 ### Screenshots
 
-****EC2** instances**
+****EC2** instances Setup**
 
 ![**EC2** instances](Screenshots/GAOSA_1.png)
+
+![**EC2** instances](Screenshots/GAOSA_2.png)
+
+![**EC2** instances](Screenshots/GAOSA_3.png)
+
+![**EC2** instances](Screenshots/GAOSA_4.png)
+
+![**EC2** instances](Screenshots/GAOSA_5.png)
+
+![**EC2** instances](Screenshots/GAOSA_6.png)
+
+![**EC2** instances](Screenshots/GAOSA_7.png)
+
+![**EC2** instances](Screenshots/GAOSA_8.png)
+
+![**EC2** instances](Screenshots/GAOSA_9.png)
+
+![**EC2** instances](Screenshots/GAOSA_10.png)
+
+![**EC2** instances](Screenshots/GAOSA_11.png)
+
+![**EC2** instances](Screenshots/GAOSA_12.png)
 
 **Auto-Stop tag**
 
