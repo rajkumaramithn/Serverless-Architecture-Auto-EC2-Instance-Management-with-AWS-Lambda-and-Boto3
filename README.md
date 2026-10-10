@@ -131,7 +131,12 @@ The complete implementation is available in [`lambda_function.py`](lambda_functi
 
 ## Ensure the `Auto-Stop` instance is running.
 
-## Ensure the `Auto-Start` instance is stopped. ## Open the Lambda function in the AWS Console. ## Create a test event containing an empty JSON object: `{}`. ## Invoke the function. ## Review the execution response. ## Inspect CloudWatch Logs for instance IDs and action messages. ## Refresh the EC2 Instances page and verify the final states.
+**Ensure the `Auto-Start` instance is stopped.** 
+**Open the Lambda function in the AWS Console.** 
+**Create a test event containing an empty JSON object: `{}`.**
+**Invoke the function. ## Review the execution response.** 
+**Inspect CloudWatch Logs for instance IDs and action messages.** 
+**Refresh the EC2 Instances page and verify the final states.**
 
 ## 9. Test Results
 
@@ -139,9 +144,9 @@ Record the actual results obtained during execution.
 
 | Test Case | Expected Result | Actual Result |
 |---|---|---|
-| Stop tagged instance | Instance becomes stopped | Update after testing |
-| Start tagged instance | Instance becomes running | Update after testing |
-| Lambda invocation | Successful execution | Update after testing |
+| Stop tagged instance | Instance becomes stopped | Stopped Successfuly |
+| Start tagged instance | Instance becomes running | Started Successfully |
+| Lambda invocation | Successful execution | Executed Successfully |
 
 ### Lambda Invocation
 
