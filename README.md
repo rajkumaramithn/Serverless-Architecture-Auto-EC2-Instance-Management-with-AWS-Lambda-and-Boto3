@@ -1,5 +1,7 @@
 # Automated EC2 Instance Management Using AWS Lambda and Boto3
 
+By **rajkumaramithn**
+
 ## 1. Project Overview
 
 This project demonstrates how to automate the starting and stopping of Amazon **EC2** instances using **AWS** Lambda and Boto3, the **AWS** **SDK** for Python.
